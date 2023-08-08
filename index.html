@@ -11,11 +11,62 @@
     <title>Pioneer Bank</title>
 </head>
 <body>
-    <div class="logIn-area">
+    <!-- section-1 login button event handler -->
+    <div id="login-area">
         <h1 class="bank-title">Welcome to pioneer bank</h1>
         <div class="submite-area">
-            <input type="email" name="mail" placeholder="Enter your email" id="">
+            <input type="text" class="form-control mb-3" placeholder="Enter your email">
+            <input type="password" class="form-control mb-3" placeholder="Enter your password">
+            <button id="login" class="btn btn-success">Log in</button>
         </div>
     </div>
+
+    <!-- section-2 defosit button event handler-->
+    <div id="tansaction-area">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="Defosit status">
+                    <h4>Defosit</h4>
+                    <h2>$ <span id="currentDeposit">00</span></h2> 
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+                <div class="Withdraw status">
+                    <h4>Withdraw</h4>
+                    <h2>$ <span id="currentwithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Balance status">
+                    <h4>Balance</h4>
+                    <h2>$ <span id="currentBalance">1000</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submite-area">
+                    <h3>Deposit</h3>
+                    <input id="depositAmount" type="text" name="" id="" placeholder="$ amount yor want defosit" class="form-control mb-3">
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submite-area">
+
+                    <h3>Withdraw</h3>
+
+                    <input type="text" name="" id="withdrawAmount" placeholder="$ amount yor want withdraw" class="form-control mb-3">
+
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,33 @@
 body{
-    padding: 100px;
+    margin: 100px;
 }
+/* section-1 */
 .bank-title{
     text-align: center;
+}
+.submite-area{
+    margin-top: 60px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+/* section-2 */
+#tansaction-area{
+    display: none;
+}
+.status{
+    margin: 0 50px;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.Defosit{
+    background-color: #5957BF;
+}
+.Withdraw{
+    background-color: #E99379;
+}
+.Balance{
+    background-color: #EA9B30;
 }
